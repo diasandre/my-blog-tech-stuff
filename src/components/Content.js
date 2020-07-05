@@ -1,26 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
 import "../styles.css"
+import PostLink from "./PostLink"
 
 const Content = ({ edges }) => {
   return (
-    <>
+    <div className="post">
       {edges.map(edge => {
         const { frontmatter } = edge.node
-        return (
-          <p
-            key={frontmatter.path}
-          >
-            <Link to={frontmatter.path}>
-              {frontmatter.title}
-            </Link>
-          </p>
-        )
+        return <PostLink frontmatter={frontmatter} />
       })}
-      <div>
-        <Link to='/tags'>Browse by Tag</Link>
-      </div>
-    </>)
+    </div>)
 }
 
 export default Content

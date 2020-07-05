@@ -1,10 +1,8 @@
 ---
-path: "/first-post"
+path: "/gatsby"
+externalurl: "https://www.gatsbyjs.org/"
 date: "2020-06-14"
-title: "My First Post"
-tags: ['this', 'that']
-excerpt: "A preview of my first post"
+title: "Gatsby is great"
+tags: ['framework']
 type: "LINK"
 ---
-
-Lorem ipsum.

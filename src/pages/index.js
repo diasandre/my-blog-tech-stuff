@@ -2,14 +2,17 @@ import React from "react"
 import { graphql } from 'gatsby'
 import Header from '../components/Header'
 import Content from "../components/Content"
+import { IconContext } from "react-icons";
 
 const Layout = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   return (
-    <div className="content">
-      <Header />
-      <Content edges={edges} />
-    </div>
+    <IconContext.Provider value={{ className: 'icon' }}>
+      <div className="content">
+        <Header />
+        <Content edges={edges} />
+      </div>
+    </IconContext.Provider>
   )
 }
 
@@ -23,7 +26,9 @@ export const query = graphql`
           frontmatter {
             title
             path
+            externalurl
             date
+            type
           }
         }
       }

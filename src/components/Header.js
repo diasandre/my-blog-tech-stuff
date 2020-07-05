@@ -1,13 +1,17 @@
 import React from "react"
 import { StaticQuery, graphql } from 'gatsby'
+import { AiOutlineTwitter } from "react-icons/ai"
 import "../styles.css"
 
 const TitleAndDescription = ({ data: { site: { siteMetadata } } }) => {
   const { title, description } = siteMetadata
   return (
     <>
-      <h2>{title}</h2>
-      <p className="title-description">
+      <div className="title">
+        <h2>{title}</h2>
+        <AiOutlineTwitter className="twitter" />
+      </div>
+      <p className="description">
         {description}
       </p>
     </>
