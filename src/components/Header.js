@@ -1,24 +1,30 @@
 import React from "react"
-import { StaticQuery, graphql } from 'gatsby'
-import { AiOutlineTwitter } from "react-icons/ai"
+import { StaticQuery, graphql } from "gatsby"
+import HeaderSocial from "./HeaderSocial"
 import "../styles.css"
 
-const TitleAndDescription = ({ data: { site: { siteMetadata } } }) => {
-  const { title, description } = siteMetadata
+const Header = ({
+  data: {
+    site: { siteMetadata },
+  },
+}) => {
+  const { title, description, company, companyurl } = siteMetadata;
+  const goToCompanyUrl = () => window.open(companyurl, "_blank")
   return (
     <>
       <div className="title">
         <h2>{title}</h2>
-        <AiOutlineTwitter className="twitter" />
+        <HeaderSocial />
       </div>
       <p className="description">
         {description}
+        <span className="company" onClick={goToCompanyUrl}>{company}</span>
       </p>
     </>
   )
 }
 
-const Header = () => {
+const HeaderQuery = () => {
   return (
     <StaticQuery
       query={graphql`
@@ -27,13 +33,15 @@ const Header = () => {
             siteMetadata {
               title
               description
+              company
+              companyurl
             }
           }
         }
       `}
-      render={data => <TitleAndDescription data={data} />}
+      render={data => <Header data={data} />}
     />
   )
 }
 
-export default Header
+export default HeaderQuery

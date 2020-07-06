@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'andré dias da silva',
-    description: 'cool tech stuffs'
+    description: "Hi, my name is André Dias, i'm a fullstack developer, currently working at ",
+    company: "Aurum Software",
+    companyurl: "https://www.aurum.com.br/"
   },
   plugins: [
     `gatsby-transformer-remark`,

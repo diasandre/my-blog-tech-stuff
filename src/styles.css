@@ -1,72 +1,105 @@
+body {
+  font-family: "Roboto";
+}
+
 .content {
-    display: flex;
-    margin: 0 auto;
-    padding-top: 50px;
-    width: 50%;
-    flex-direction: column;
-    align-items: flex-start;
-    font-family: 'Roboto';
+  display: flex;
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.25em;
 }
 
 h2 {
-    margin: 0;
-    font-size: 2em;
-    font-weight: 900;
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 900;
 }
 
 .description {
-    margin-top: 0;
-    margin-bottom: 0;
-    opacity: 0.5;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: justify;
+  opacity: 0.8;
+  font-size: 1.8em;
 }
 
 .title {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .icon {
-    margin-left: 10px;
-    width: 2em;
-    height: 2em;
-    vertical-align: middle;
+  margin-left: 10px;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
 }
 
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .post-link:hover {
-    color: rgb(51, 51, 51);
-    cursor: pointer;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
 }
 
 .external-icon {
-    width: 0.6em;
-    height: 1em;
+  width: 0.6em;
+  height: 1em;
+}
+
+.posts {
+  margin-top: 15px;
 }
 
 .post {
-    margin-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .tag {
-    display: inline-block;
-    padding: 0 7px;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-    border: 1px solid transparent;
-    margin-left: 10px;
+  display: inline-block;
+  padding: 0 7px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  border: 1px solid transparent;
+  margin-left: 10px;
 }
 
 .date-tag {
-    background-color: #c5112a;
-    color: white;
+  background-color: #c5112a;
+  color: white;
+}
+
+.social {
+  cursor: pointer;
 }
 
 .twitter {
-    color: #1DA1F2;
-    cursor: pointer;
+  color: #1da1f2;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.company {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 0 5px;
+}
+
+.month-year {
+  font-weight: 500;
+  background: black;
+  color: white;
+  opacity: 0.8;
+  padding: 3px 5px;
 }
