@@ -18,7 +18,7 @@ const Header = ({
       </div>
       <p className="description">
         {description}
-        <span className="company" onClick={goToCompanyUrl}>{company}</span>
+        <span className="company" onClick={goToCompanyUrl}>{company}.</span>
       </p>
     </>
   )

@@ -19,11 +19,12 @@ h2 {
 }
 
 .description {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: justify;
+  margin-top: 30px;
+  margin-bottom: 30px;
   opacity: 0.8;
   font-size: 1.8em;
+  font-weight: 300;
+  line-height: 1.3em;
 }
 
 .title {
@@ -36,6 +37,11 @@ h2 {
   width: 2em;
   height: 2em;
   vertical-align: middle;
+  cursor: pointer;
+}
+
+.icon:hover {
+  opacity: 0.7;
 }
 
 a {
@@ -43,23 +49,22 @@ a {
   text-decoration: none;
 }
 
-.post-link:hover {
-  color: rgb(51, 51, 51);
-  cursor: pointer;
-}
-
 .external-icon {
   width: 0.6em;
   height: 1em;
 }
 
-.posts {
-  margin-top: 15px;
+.group-of-posts {
+  margin-bottom: 30px;
 }
 
 .post {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.post-link {
+  cursor: pointer;
 }
 
 .tag {
@@ -69,16 +74,13 @@ a {
   font-weight: 500;
   line-height: 18px;
   border: 1px solid transparent;
+  border-radius: 10px;
   margin-left: 10px;
 }
 
 .date-tag {
   background-color: #c5112a;
   color: white;
-}
-
-.social {
-  cursor: pointer;
 }
 
 .twitter {
@@ -91,9 +93,7 @@ a {
 
 .company {
   cursor: pointer;
-  background-color: black;
-  color: white;
-  padding: 0 5px;
+  text-decoration: underline;
 }
 
 .month-year {
