@@ -1,46 +1,40 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
+import React from "react"
+import Header from "../components/Header"
+import { graphql } from "gatsby"
+import DateTag from "../components/DateTag"
+import { IconContext } from "react-icons/lib"
+import moment from "moment"
 
-const Template = ({data, pageContext}) => {
-  const {next, prev} = pageContext
-
-  const {markdownRemark} = data
-  const title = markdownRemark.frontmatter.title
-  const html = markdownRemark.html
+const Template = ({
+  data: {
+    markdownRemark: {
+      html,
+      frontmatter: { title, date },
+    },
+  },
+}) => {
+  const dateFormatted = moment(date).format("DD/MM/YYYY")
   return (
-    <div>
-      <h1 style={{fontFamily: 'avenir'}}>{title}</h1>
-      <div className='blogpost'
-        dangerouslySetInnerHTML={{__html: html}}
-        style={{
-          fontFamily: 'avenir'
-        }}
-      />
-
-      <div style={{marginBottom: '1rem', fontFamily: 'avenir'}}>
-        {next &&
-          <Link to={next.frontmatter.path}>
-            Next: {`${next.frontmatter.title}`}
-          </Link>
-        }
+    <IconContext.Provider value={{ className: "icon" }}>
+      <div className="content">
+        <Header />
+        <h3>
+          {title}
+          <DateTag value={dateFormatted} />
+        </h3>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
-      <div style={{fontFamily: 'avenir'}}>
-        {prev &&
-          <Link to={prev.frontmatter.path}>
-            Prev: {`${prev.frontmatter.title}`}
-          </Link>
-        }
-      </div>
-    </div>
+    </IconContext.Provider>
   )
 }
 
 export const query = graphql`
   query($pathSlug: String!) {
-    markdownRemark(frontmatter: { path: {eq: $pathSlug} }) {
+    markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
       html
       frontmatter {
         title
+        date
       }
     }
   }

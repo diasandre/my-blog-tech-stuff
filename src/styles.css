@@ -69,6 +69,7 @@ a {
 
 .tag {
   display: inline-block;
+  vertical-align: middle;
   padding: 0 7px;
   font-size: 12px;
   font-weight: 500;
