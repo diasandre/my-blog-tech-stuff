@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "my-blog-andre-dias",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "my tech blog",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -11,15 +11,16 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "preload-fonts": "gatsby-preload-fonts"
   },
   "dependencies": {
     "gatsby": "^2.22.15",
-    "gatsby-cli": "^2.12.58",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-cli": "^2.12.60",
+    "gatsby-plugin-preload-fonts": "^1.2.17",
     "gatsby-source-filesystem": "^2.3.11",
     "gatsby-transformer-remark": "^2.8.15",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "moment": "^2.27.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
