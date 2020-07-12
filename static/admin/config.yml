@@ -6,7 +6,6 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-collections:
   - name: "my-blog-andre-dias"
     label: "My blog"
     folder: "_posts/blog"
