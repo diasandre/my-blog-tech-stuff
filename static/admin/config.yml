@@ -8,15 +8,15 @@ public_folder: /img
 collections:
   - name: "my-blog-andre-dias"
     label: "My blog"
-    folder: "_posts/blog"
+    folder: `/src/pages`
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Path", name: "path", widget: "string", default: "/"}
-      - {label: "Title", name: "title", widget: "string", default: "BLOG"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Type", name: "type", widget: "string", default: "BLOG"}
       - {label: "Link externo", name: "externalurl", widget: "string"}
-      - {label: "Type", name: "type", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
       
