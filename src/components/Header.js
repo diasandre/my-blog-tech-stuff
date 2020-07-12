@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import HeaderSocial from "./HeaderSocial"
 import "../styles.css"
 
@@ -8,17 +8,21 @@ const Header = ({
     site: { siteMetadata },
   },
 }) => {
-  const { title, description, company, companyurl } = siteMetadata;
+  const { title, description, company, companyurl } = siteMetadata
   const goToCompanyUrl = () => window.open(companyurl, "_blank")
   return (
     <>
       <div className="title">
-        <h2>{title}</h2>
+        <Link to="/">
+          <h2>{title}</h2>
+        </Link>
         <HeaderSocial />
       </div>
       <p className="description">
         {description}
-        <span className="company" onClick={goToCompanyUrl}>{company}.</span>
+        <span className="company" onClick={goToCompanyUrl}>
+          {company}.
+        </span>
       </p>
     </>
   )
