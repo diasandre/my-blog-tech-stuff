@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import DateTag from "../components/DateTag"
 import { IconContext } from "react-icons/lib"
 import moment from "moment"
+import { Container } from "../style"
 
 const Template = ({
   data: {
@@ -16,14 +17,14 @@ const Template = ({
   const dateFormatted = moment(date).format("DD/MM/YYYY")
   return (
     <IconContext.Provider value={{ className: "icon" }}>
-      <div className="content">
+      <Container>
         <Header />
         <h3>
           {title}
           <DateTag value={dateFormatted} />
         </h3>
         <div dangerouslySetInnerHTML={{ __html: html }} />
-      </div>
+      </Container>
     </IconContext.Provider>
   )
 }

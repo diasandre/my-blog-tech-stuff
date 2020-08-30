@@ -1,21 +1,22 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Header from "../components/Header"
-import Content from "../components/Content"
-import { IconContext } from "react-icons"
-import { mapData, groupData } from "../helpers/postsHelper"
+import React from 'react';
+import { graphql } from 'gatsby';
+import Header from '../components/Header';
+import Content from '../components/Content';
+import { IconContext } from 'react-icons';
+import { mapData, groupData } from '../helpers/postsHelper';
+import { Container } from '../style';
 
 const Layout = ({ data }) => {
-  const content = groupData(mapData(data))
+  const content = groupData(mapData(data));
   return (
-    <IconContext.Provider value={{ className: "icon" }}>
-      <div className="content">
+    <IconContext.Provider value={{ className: 'icon' }}>
+      <Container>
         <Header />
         <Content content={content} />
-      </div>
+      </Container>
     </IconContext.Provider>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query HomepageQuery {
@@ -33,6 +34,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default Layout
+export default Layout;

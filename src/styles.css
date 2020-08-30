@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
 body {
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 
 .content {
@@ -27,15 +27,27 @@ h2 {
   font-size: 1.8em;
   font-weight: 300;
   line-height: 1.3em;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.title {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 631px) {
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .icon {
-  margin-left: 10px;
   width: 2em;
   height: 2em;
   vertical-align: middle;

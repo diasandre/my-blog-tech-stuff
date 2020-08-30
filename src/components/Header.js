@@ -1,22 +1,26 @@
-import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
-import HeaderSocial from "./HeaderSocial"
-import "../styles.css"
+import React from 'react';
+import { StaticQuery, graphql, Link } from 'gatsby';
+import HeaderSocial from './HeaderSocial';
+import '../styles.css';
 
 const Header = ({
   data: {
     site: { siteMetadata },
   },
 }) => {
-  const { title, description, company, companyurl } = siteMetadata
-  const goToCompanyUrl = () => window.open(companyurl, "_blank")
+  const { title, description, company, companyurl } = siteMetadata;
+  const goToCompanyUrl = () => window.open(companyurl, '_blank');
   return (
     <>
       <div className="title">
-        <Link to="/">
-          <h2>{title}</h2>
-        </Link>
-        <HeaderSocial />
+        <div>
+          <Link to="/">
+            <h2>{title}</h2>
+          </Link>
+        </div>
+        <div>
+          <HeaderSocial />
+        </div>
       </div>
       <p className="description">
         {description}
@@ -25,8 +29,8 @@ const Header = ({
         </span>
       </p>
     </>
-  )
-}
+  );
+};
 
 const HeaderQuery = () => {
   return (
@@ -43,9 +47,9 @@ const HeaderQuery = () => {
           }
         }
       `}
-      render={data => <Header data={data} />}
+      render={(data) => <Header data={data} />}
     />
-  )
-}
+  );
+};
 
-export default HeaderQuery
+export default HeaderQuery;

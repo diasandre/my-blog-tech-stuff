@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "andré dias da silva",
+    title: 'andré dias da silva',
     description:
       "Hi, my name is André from Florianópolis, Brazil. I'm a fullstack developer, currently working at ",
-    company: "Aurum Software",
-    companyurl: "https://www.aurum.com.br/",
+    company: 'Aurum Software',
+    companyurl: 'https://www.aurum.com.br/',
   },
   plugins: [
     `gatsby-transformer-remark`,
@@ -15,6 +15,7 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-    `gatsby-plugin-netlify-cms`
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-styled-components`,
   ],
-}
+};
