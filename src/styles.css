@@ -121,3 +121,11 @@ a {
   opacity: 0.8;
   padding: 3px 5px;
 }
+
+.blog-content > p img {
+  width: 100%;
+}
+
+.blog-content img {
+  width: 100%;
+}

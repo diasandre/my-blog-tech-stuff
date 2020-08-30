@@ -20,7 +20,7 @@ const Content = ({ content }) => {
             <span className="month-year">{monthAndYear}</span>
             {posts.map((post) => {
               const PostComponent = getPostComponent(post);
-              return <PostComponent post={post} />;
+              return <PostComponent key={post.path} post={post} />;
             })}
           </div>
         );

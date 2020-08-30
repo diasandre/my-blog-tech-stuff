@@ -23,7 +23,7 @@ const Template = ({
           {title}
           <DateTag value={dateFormatted} />
         </h3>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div className="blog-content" dangerouslySetInnerHTML={{ __html: html }} />
       </Container>
     </IconContext.Provider>
   )
