@@ -15,3 +15,5 @@ For the next releases i'm planning to add a error handler when filter not return
 https://where-to-travel.netlify.app/
 
 see ya
+
+![Where to travel home page](/img/2020-08-30-17_21_45-window.png)
