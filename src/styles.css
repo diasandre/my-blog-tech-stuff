@@ -52,6 +52,7 @@ h2 {
 .icon {
   width: 2em;
   height: 2em;
+  margin-left: 4px;
   vertical-align: middle;
   cursor: pointer;
 }
