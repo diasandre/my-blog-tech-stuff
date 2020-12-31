@@ -1,30 +1,18 @@
-import React from "react"
-import { AiOutlineTwitter, AiFillGithub, AiFillLinkedin } from "react-icons/ai"
-import "../styles.css"
-import { SOCIAL_URL, SOCIAL_TYPES } from "../constants/socialConstants"
+import React from 'react';
+import { AiFillGithub } from 'react-icons/ai';
+import '../styles.css';
+import { SOCIAL_URL, SOCIAL_TYPES } from '../constants/socialConstants';
 
 const HeaderSocial = () => {
-  const goToUrl = type => {
-    const path = SOCIAL_URL[type]
-    window.open(path, "_blank")
-  }
-
+  const goToUrl = (type) => window.open(SOCIAL_URL[type], '_blank');
   return (
-    <>
-      <AiOutlineTwitter
-        onClick={() => goToUrl(SOCIAL_TYPES.TWITTER)}
-        className="social twitter"
-      />
+    <div>
       <AiFillGithub
         onClick={() => goToUrl(SOCIAL_TYPES.GITHUB)}
         className="social"
       />
-      <AiFillLinkedin
-        onClick={() => goToUrl(SOCIAL_TYPES.LINKEDIN)}
-        className="social linkedin"
-      />
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default HeaderSocial
+export default HeaderSocial;
