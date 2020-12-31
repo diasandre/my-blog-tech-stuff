@@ -3,8 +3,8 @@ module.exports = {
     title: 'andré dias da silva',
     description:
       "Hi, my name is André from Florianópolis, Brazil. I'm a fullstack developer, currently working at ",
-    company: 'Aurum Software',
-    companyurl: 'https://www.aurum.com.br/',
+    company: 'Dextra',
+    companyurl: 'https://www.dextra.com.br/',
   },
   plugins: [
     `gatsby-transformer-remark`,

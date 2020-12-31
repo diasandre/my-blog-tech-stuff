@@ -18,9 +18,7 @@ const Header = ({
             <h2>{title}</h2>
           </Link>
         </div>
-        <div>
-          <HeaderSocial />
-        </div>
+        <HeaderSocial />
       </div>
       <p className="description">
         {description}

@@ -1,4 +1,3 @@
-import _ from "lodash"
 import moment from "moment"
 
 export const mapData = ({ allMarkdownRemark: { edges } }) => {
@@ -10,8 +9,4 @@ export const mapData = ({ allMarkdownRemark: { edges } }) => {
       date: momentDate,
     }
   })
-}
-
-export const groupData = data => {
-  return _.groupBy(data, value => value.date.format("MMMM/YYYY"))
 }

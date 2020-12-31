@@ -2,6 +2,8 @@
 
 body {
   font-family: 'Roboto';
+  background-color: #17223b;
+  color: #dcdcdc;
 }
 
 .content {
@@ -18,25 +20,38 @@ h2 {
   margin: 0;
   font-size: 2.5em;
   font-weight: 900;
+  color: #ff6768;
+}
+
+h2:hover {
+  opacity: 0.8;
+}
+
+h3 {
+  color: white;
+  margin: 0;
+  font-size: 1.4em;
 }
 
 .description {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  opacity: 0.8;
-  font-size: 1.8em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
   font-weight: 300;
   line-height: 1.3em;
-  background-color: #f3f3f3;
+  background-color: #263859;
   border-radius: 5px;
+  color: white;
   padding: 10px;
 }
 
 @media screen and (min-width: 631px) {
   .title {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -66,60 +81,14 @@ a {
   text-decoration: none;
 }
 
-.external-icon {
-  width: 0.6em;
-  height: 1em;
-}
-
-.group-of-posts {
-  margin-bottom: 30px;
-}
-
 .post {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.post-link {
-  cursor: pointer;
-}
-
-.tag {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0 7px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  margin-left: 10px;
-}
-
-.date-tag {
-  background-color: #c5112a;
-  color: white;
-}
-
-.twitter {
-  color: #1da1f2;
-}
-
-.linkedin {
-  color: #0077b5;
-}
-
 .company {
   cursor: pointer;
   text-decoration: underline;
-}
-
-.month-year {
-  font-weight: 500;
-  background: black;
-  color: white;
-  opacity: 0.8;
-  padding: 3px 5px;
 }
 
 .blog-content > p img {
@@ -128,4 +97,10 @@ a {
 
 .blog-content img {
   width: 100%;
+}
+
+.post p {
+  color: white;
+  margin: 0;
+  font-size: 0.75em;
 }
