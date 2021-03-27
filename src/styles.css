@@ -33,6 +33,12 @@ h3 {
   font-size: 1.4em;
 }
 
+h4 {
+  color: #ff6768;
+  margin: 0;
+  font-size: 1.25em;
+}
+
 .description {
   margin-top: 15px;
   margin-bottom: 15px;
