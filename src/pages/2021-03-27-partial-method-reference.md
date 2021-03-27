@@ -4,12 +4,14 @@ path: /kotlin-partial-method-reference
 title: Partial method reference
 date: 2021-03-27T14:20:30.890Z
 ---
-Quando você começa a trabalhar com kotlin, é prática comum existirem diversas cadeias de código usando scope functions. 
+Quando você começa a trabalhar com kotlin, é comum existirem métodos encadeados utilizando scope functions. 
 
-Para manter meu código sempre limpo e seguindo princípios do S.O.L.I.D, é comum a utilização de method reference para chamar as funções, porém é uma limitação hoje que só se pode chamar funções se a mesma possuir apenar um parâmetro.
+Para manter meu código sempre limpo e seguindo princípios do S.O.L.I.D, utilizo bastante method reference para a chamada dos métodos, porém existe a limitação de que só se pode chamar métodos que possuem apenas um parâmetro.
 
 ```kotlin
 val someValue = "123"
+
+fun saveToFirebase(list: List<Item>) = service.save(list)
 
 list
     .filter(::checkSomeVariable)
@@ -17,25 +19,51 @@ list
     .let(::saveToFirebase)
 ```
 
-
-
-E o que acontece caso o método `saveToFirebase` precise do parâmetro `someValue`? Para isso seria necessário remover o method reference e utilizar o lambda.
-
-
+E o que acontece caso o método `saveToFirebase` precise receber mais um parâmetro como, por exemplo o valor `someValue`? Para isso seria necessário remover o method reference e utilizar o lambda.
 
 ```kotlin
+val someValue = "123"
+
+fun saveToFirebase(list: List<Item>, value: String) = service.save(list, value)
+
 list
     .filter(::checkSomeVariable)
     .also(::logItems)
     .let { items -> saveToFirebase(items, someValue) }
 ```
 
-
-
-Para resolver esse problema, vamos utilizar o `arrow-syntax`.
+Para resolver esse problema e continuarmos utilizando method reference nesses casos, vamos utilizar o `arrow-syntax`.
 
 #### Instalando
 
-é necessário adicionar a dependência ao seu projeto
+É necessário adicionar a dependência ao seu projeto
 
-`implementation("io.arrow-kt:arrow-syntax:0.11.0")`
+`implementation("io.arrow-kt:arrow-syntax:<version>")`
+
+#### Utilizando
+
+A função que vai ser chamada via `partial method reference` precisa que o último atributo recebido seja sempre o que está vindo dos métodos encadeados como no nosso exemplo uma lista de itens.
+
+```kotlin
+fun saveToFirebase(value: String, list: List<Item>) = service.save(list, value)
+```
+
+E para chamar essa função, você passa os valores entre parenteses logo após o `method reference` invocando o método.
+
+```kotlin
+list
+    .filter(::checkSomeVariable)
+    .also(::logItems)
+    .let((::saveToFirebase)(someValue))
+```
+
+Esse método pode ser utilizado para qualquer quantidade de parâmetros, porém **não é recomendado.** A utilização abusiva pode deixar o código mais difícil de entender.
+
+```kotlin
+fun saveToFirebase(value: String, anotherValue: String, list: List<Item>) = service.save(list, value)
+
+list
+    .filter(::checkSomeVariable)
+    .also(::logItems)
+    .let((::saveToFirebase)(someValue)(anotherValue))
+```
