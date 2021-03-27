@@ -97,6 +97,10 @@ a {
   text-decoration: underline;
 }
 
+.blog-content {
+  width: 100%;
+}
+
 .blog-content > p img {
   width: 100%;
 }
