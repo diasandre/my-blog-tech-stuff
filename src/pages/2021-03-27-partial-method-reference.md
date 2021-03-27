@@ -34,7 +34,7 @@ list
 
 Para resolver esse problema, vamos utilizar o `arrow-syntax`.
 
-## Instalando
+#### Instalando
 
 é necessário adicionar a dependência ao seu projeto
 
