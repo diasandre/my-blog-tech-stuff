@@ -42,6 +42,10 @@ Para resolver esse problema e continuarmos utilizando method reference nesses ca
 
 #### Utilizando
 
+Importante destacar que o intellij não realiza o import correto portanto sempre que for utilizar adicionar o seguinte import na sua classe:
+
+`import arrow.syntax.function.invoke`
+
 A função que vai ser chamada via `partial method reference` precisa que o último atributo recebido seja sempre o que está vindo dos métodos encadeados como no nosso exemplo uma lista de itens.
 
 ```kotlin
