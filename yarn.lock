@@ -4682,10 +4682,10 @@ engine.io@~3.4.0:
     engine.io-parser "~2.2.0"
     ws "^7.1.2"
 
-enhanced-resolve@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-4.3.0.tgz#3b806f3bfafc1ec7de69551ef93cca46c1704126"
-  integrity sha512-3e87LvavsdxyoCfGusJnrZ5G8SLPOFeHSNpZI/ATL9a5leXo2k0w6MKnbqhdBad9qTobSfB20Ld7UmgoNbAZkQ==
+enhanced-resolve@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-4.5.0.tgz#2f3cfd84dbe3b487f18f2db2ef1e064a571ca5ec"
+  integrity sha512-Nv9m36S/vxpsI+Hc4/ZGRs0n9mXqSWGGq49zxb/cJfPAQMbUtttJAlNPS4AQzaBdw/pKskw5bMbekT/Y7W/Wlg==
   dependencies:
     graceful-fs "^4.1.2"
     memory-fs "^0.5.0"
@@ -5743,10 +5743,10 @@ gatsby-page-utils@^0.6.1:
     lodash "^4.17.20"
     micromatch "^4.0.2"
 
-gatsby-plugin-netlify-cms@^4.3.11:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.7.0.tgz#1b047869912ae2c2d60418db269fae4ff62dad40"
-  integrity sha512-vP+4tYfMuKS+GVjuOSJkznfDUZcaVV47LQ0Z8Qa1BudJ0R6VivVzD1bpsTJsZXETpUNF+gd+G1F/sa/9fIA38Q==
+gatsby-plugin-netlify-cms@^4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.10.0.tgz#d404356f6fd4aef9a7511327948089cb6d33aab1"
+  integrity sha512-gymm4oObtyOBl3oKGb15KeiB0U/K4k5NQG06X2HLaM8XhToMDu6QYL/Y2Y0JsE5+WOnLQjCF4lNbTJijK41PwQ==
   dependencies:
     "@pieh/friendly-errors-webpack-plugin" "1.7.0-chalk-2"
     copy-webpack-plugin "^5.1.2"
@@ -5754,9 +5754,9 @@ gatsby-plugin-netlify-cms@^4.3.11:
     html-webpack-plugin "^3.2.0"
     html-webpack-tags-plugin "^2.0.17"
     lodash "^4.17.20"
-    mini-css-extract-plugin "^0.11.2"
+    mini-css-extract-plugin "^0.12.0"
     netlify-identity-widget "^1.9.1"
-    webpack "^4.44.2"
+    webpack "^4.46.0"
 
 gatsby-plugin-page-creator@^2.7.2:
   version "2.7.2"
@@ -8240,12 +8240,7 @@ lodash.without@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.without/-/lodash.without-4.4.0.tgz#3cd4574a00b67bae373a94b748772640507b7aac"
   integrity sha1-PNRXSgC2e643OpS3SHcmQFB7eqw=
 
-lodash@^4.0.1, lodash@^4.1.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
-  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
-
-lodash@^4.17.21:
+lodash@^4.0.1, lodash@^4.1.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -8672,6 +8667,16 @@ mini-css-extract-plugin@^0.11.2:
   version "0.11.3"
   resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.11.3.tgz#15b0910a7f32e62ffde4a7430cfefbd700724ea6"
   integrity sha512-n9BA8LonkOkW1/zn+IbLPQmovsL0wMb9yx75fMJQZf2X1Zoec9yTZtyMePcyu19wPkmFbzZZA6fLTotpFhQsOA==
+  dependencies:
+    loader-utils "^1.1.0"
+    normalize-url "1.9.1"
+    schema-utils "^1.0.0"
+    webpack-sources "^1.1.0"
+
+mini-css-extract-plugin@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.12.0.tgz#ddeb74fd6304ca9f99c1db74acc7d5b507705454"
+  integrity sha512-z6PQCe9rd1XUwZ8gMaEVwwRyZlrYy8Ba1gRjFP5HcV51HkXX+XlwZ+a1iAYTjSYwgNBXoNR7mhx79mDpOn5fdw==
   dependencies:
     loader-utils "^1.1.0"
     normalize-url "1.9.1"
@@ -13944,10 +13949,10 @@ webpack-virtual-modules@^0.2.2:
   dependencies:
     debug "^3.0.0"
 
-webpack@^4.44.1, webpack@^4.44.2:
-  version "4.44.2"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.44.2.tgz#6bfe2b0af055c8b2d1e90ed2cd9363f841266b72"
-  integrity sha512-6KJVGlCxYdISyurpQ0IPTklv+DULv05rs2hseIXer6D7KrUicRDLFb4IUM1S6LUAKypPM/nSiVSuv8jHu1m3/Q==
+webpack@^4.44.1, webpack@^4.46.0:
+  version "4.46.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.46.0.tgz#bf9b4404ea20a073605e0a011d188d77cb6ad542"
+  integrity sha512-6jJuJjg8znb/xRItk7bkT0+Q7AHCYjjFnvKIWQPkNIOyRqoCGvkOs0ipeQzrqz4l5FtN5ZI/ukEHroeX/o1/5Q==
   dependencies:
     "@webassemblyjs/ast" "1.9.0"
     "@webassemblyjs/helper-module-context" "1.9.0"
@@ -13957,7 +13962,7 @@ webpack@^4.44.1, webpack@^4.44.2:
     ajv "^6.10.2"
     ajv-keywords "^3.4.1"
     chrome-trace-event "^1.0.2"
-    enhanced-resolve "^4.3.0"
+    enhanced-resolve "^4.5.0"
     eslint-scope "^4.0.3"
     json-parse-better-errors "^1.0.2"
     loader-runner "^2.4.0"
