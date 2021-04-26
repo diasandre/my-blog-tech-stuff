@@ -6,6 +6,8 @@ date: 2021-03-27T14:20:30.890Z
 ---
 Quando você começa a trabalhar com Kotlin, por ser uma linguagem que mistura paradigmas, é comum a utilização de métodos encadeados por scope functions. 
 
+Com o lançamento da versão 0.13 do arrow-kt, a função invoke foi depreciada e substituida pelo Partially e curied. Para mais informações [arrow-kt-partial-method-reference.kt](https://gist.github.com/diasandre/42db29f7c7ef1fda551e0099498f079e)
+
 Para se manter o código sempre limpo e seguindo princípios do S.O.L.I.D, eu gosto de utilizar method reference para a chamada dos métodos, porém existe a limitação de que só se pode chamar métodos que recebem apenas um parâmetro.
 
 ```kotlin

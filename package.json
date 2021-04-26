@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "gatsby": "^2.32.12",
-    "gatsby-cli": "^2.16.2",
+    "gatsby-cli": "^3.3.0",
     "gatsby-plugin-netlify-cms": "^4.3.11",
     "gatsby-plugin-react-helmet": "^3.7.0",
     "gatsby-plugin-styled-components": "^3.3.10",
