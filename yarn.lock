@@ -5610,10 +5610,10 @@ gatsby-recipes@^0.14.0:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-remark-prismjs@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-5.0.0.tgz#edbefd34c3007d6b9e422e32cbd79df1f2b3bdfa"
-  integrity sha512-uFFdTaMEXsLic1He1JZlm4FuoNK0wasFDTk4u7UiI5tpNIZnBsSo3P0KDTKBPjq53xeWVqhGKAFmdRUXW2XGGg==
+gatsby-remark-prismjs@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-5.2.1.tgz#8ddc99b9ad0a56cf144abeae0bc2998f6d57b7ce"
+  integrity sha512-nQ+/1mLlMo+ytaOxqdT7KBfNKsKkzrEH1KN7ug2fCOEztolqfUv4R6B+jzeI3PpDiJ4aP2yoOtfvLlBjuR3sSQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     parse-numeric-range "^1.2.0"
