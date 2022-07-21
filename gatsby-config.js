@@ -2,9 +2,9 @@ module.exports = {
   siteMetadata: {
     title: 'andré dias da silva',
     description:
-      "Hi, my name is André from Florianópolis, Brazil. I'm a fullstack developer, currently working at ",
-    company: 'Dextra',
-    companyurl: 'https://www.dextra.com.br/',
+      "Hi, my name is André from Florianópolis, Brazil. I'm a backend developer, currently working at ",
+    company: 'Ifood',
+    companyurl: 'https://www.ifood.com.br/',
   },
   plugins: [
     `gatsby-transformer-remark`,
