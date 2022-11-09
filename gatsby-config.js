@@ -4,7 +4,7 @@ module.exports = {
     description:
       "Hi, my name is André from Florianópolis, Brazil. I'm a backend developer, currently working at ",
     company: 'Ifood',
-    companyurl: 'https://www.ifood.com.br/',
+    companyurl: 'https://institucional.ifood.com.br/',
   },
   plugins: [
     `gatsby-transformer-remark`,
