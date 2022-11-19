@@ -12,7 +12,7 @@ I﻿ read last year the book Effective Kotlin from Marcin Moskala, so I plan to 
 
 * **Null safety**
 
-  K﻿otlin has a built-in null safety feature, so if your code throws NullPointerException(), it's possible that you are doing something wrong. For Kotlin to understand if some value can be null or not, put \`?\` after type.
+  K﻿otlin has a built-in null safety feature, so if your code throws `NullPointerException()`, it's possible that you are doing something wrong. For Kotlin to understand if some value can be null or not, put `?` after type.
 
   ```
   private val someValue: String? = null
@@ -29,7 +29,7 @@ I﻿ read last year the book Effective Kotlin from Marcin Moskala, so I plan to 
 
      someValue?.name //using safe call
      ```
-  2. K﻿otlin will **smart cast** values for you. For example, when using \`requireNotNull\`, after that point Kotlin will recognize your value as not nullable because otherwise IllegalArgumentException will be thrown.
+  2. K﻿otlin will **smart cast** values for you. For example, when using `requireNotNull`, after that point Kotlin will recognize your value as not nullable because otherwise `IllegalArgumentException` will be thrown.
 
      ```
      private val someValue: String? = null
