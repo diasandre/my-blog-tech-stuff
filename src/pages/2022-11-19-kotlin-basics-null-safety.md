@@ -4,7 +4,7 @@ path: /kotlin-basics-null-safety
 title: Kotlin basics - null safety
 date: 2022-11-19T20:10:05.935Z
 ---
-> H﻿ello,
+H﻿ello,
 
 I﻿'m planning to write some posts about Kotlin, the first one is about null safety.
 
@@ -14,10 +14,10 @@ I﻿ read last year the book [Effective Kotlin from Marcin Moskala](https://lean
 >
 > In general, there are 3 ways of how nullable types can be handled.
 > We can:
-> • Handling nullability safely using safe call ?., smart casting,
-> Elvis operator, etc.
-> • Throw an error
-> • Refactor this function or property so that it won’t be nullable
+>
+> 1. Handling nullability safely using safe call ?., smart casting, Elvis operator, etc.
+> 2. Throw an error
+> 3. Refactor this function or property so that it won’t be nullable
 
 * **Null safety**
 
@@ -70,7 +70,6 @@ I﻿ read last year the book [Effective Kotlin from Marcin Moskala](https://lean
      list.mapNotNull { it?.toString() } 
      ```
   5. **A﻿void using !!**, this operator only quietly hides the nullability. If the value is null, Kotlin will throw NPE. The only acceptable usage is when your project uses some java library that doesn't integrate with Kotlin.
-
 
 That's it for this post, next post will be about immutability.
 
