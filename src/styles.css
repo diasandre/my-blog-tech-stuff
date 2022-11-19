@@ -119,18 +119,8 @@ a {
 blockquote {
   font-weight: 300;
   line-height: 1.3em;
-  background-color: #1c2432;
+  background-color: #26385930;
   border-radius: 5px;
   color: #fff;
   padding: 5px 20px;
 }
-
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-
