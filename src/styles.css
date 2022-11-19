@@ -114,3 +114,13 @@ a {
   margin: 0;
   font-size: 0.75em;
 }
+
+blockquote {
+  font-weight: 300;
+  line-height: 1.3em;
+  background-color: #1c2432;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 10px;
+}
+
