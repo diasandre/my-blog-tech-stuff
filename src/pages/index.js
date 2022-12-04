@@ -33,7 +33,7 @@ export const query = graphql`
             path
             externalurl
             date
-            type
+            tags
           }
         }
       }

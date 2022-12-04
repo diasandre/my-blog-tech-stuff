@@ -3,6 +3,7 @@ layout: blog
 path: /kotlin-partial-method-reference
 title: Partial method reference
 date: 2021-03-27T14:20:30.890Z
+tags: Kotlin
 ---
 When you start working with Kotlin, as it's a programming language that mixes paradigms, it's common to build a chain of scope functions for better code.
 

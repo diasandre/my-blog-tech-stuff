@@ -10,7 +10,7 @@ const Template = ({
   data: {
     markdownRemark: {
       html,
-      frontmatter: { title, date },
+      frontmatter: { title, date, tags },
     },
   },
 }) => {
@@ -23,6 +23,7 @@ const Template = ({
           post={{
             title,
             dateFormatted,
+            tags
           }}
         />
         <div

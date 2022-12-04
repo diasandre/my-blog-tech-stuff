@@ -3,6 +3,7 @@ layout: blog
 path: /kotlin-tips-tests-and-mockito
 title: "Kotlin tips: tests and mockito"
 date: 2021-07-04T18:28:35.334Z
+tags: Kotlin,Test
 ---
 Just a compilation of some tips if you are writing tests with mockito and kotlin...
 

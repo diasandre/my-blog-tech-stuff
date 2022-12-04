@@ -3,6 +3,7 @@ layout: blog
 path: /kotlin-basics-null-safety
 title: Kotlin basics - null safety
 date: 2022-11-19T20:10:05.935Z
+tags: Kotlin
 ---
 H﻿ello,
 
