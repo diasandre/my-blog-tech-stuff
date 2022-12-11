@@ -14,6 +14,9 @@ const buildTagsColors = (tags) =>
       case 'Test':
         color = '#F5B700';
         break;
+      case 'GitHub':
+        color = '#B497D6';
+        break;
     }
 
     return {
