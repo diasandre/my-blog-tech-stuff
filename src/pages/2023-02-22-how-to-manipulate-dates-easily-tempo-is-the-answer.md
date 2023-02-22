@@ -2,7 +2,7 @@
 layout: blog
 path: /tempo-release
 title: How to manipulate dates easily? Tempo is the answer!
-tags: GitHub, Kotlin
+tags: GitHub,Kotlin
 date: 2023-02-22T21:23:29.394Z
 ---
 Hello there,
