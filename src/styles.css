@@ -115,6 +115,10 @@ a {
   width: 100%;
 }
 
+.blog-content p {
+  text-align: justify;
+}
+
 .blog-content > p img {
   width: 100%;
 }
@@ -127,7 +131,6 @@ a {
   color: white;
   margin: 0;
   font-size: 0.65em;
-  text-align: justify;
 }
 
 blockquote {
