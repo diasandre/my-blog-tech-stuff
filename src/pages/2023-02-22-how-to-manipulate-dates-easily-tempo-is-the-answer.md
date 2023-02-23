@@ -11,7 +11,7 @@ Last month I released my new Kotlin library called Tempo. As a developer, workin
 
 To use Tempo, simply call the handle function and let it do the conversion for you. Here is an example:
 
-```
+```kotlin
 val actual: YearMonth = "2022-01-01".handle {
         input {
             pattern = LOCAL_DATE_PATTERN
@@ -26,7 +26,7 @@ The handle function is an extension of String, LocalDate or Instant, and uses th
 
 One of the best things about Tempo is that you can modify the converted date by changing the day, month, or year to a fixed day or performing an operation of plus or minus. Here is an example:
 
-```
+```kotlin
 val actual: YearMonth = "2022-01-01".handle {
             input {
                 pattern = LOCAL_DATE_PATTERN
